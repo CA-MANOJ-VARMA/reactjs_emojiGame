@@ -1,0 +1,19 @@
+/* Write your code here. */
+.css-bg-container {
+  background-color: #9796f0;
+  height: 100vh;
+}
+
+.css-ul-bg-container {
+  display: flex;
+  justify-content: center;
+}
+
+.css-displayEmoji-container {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}

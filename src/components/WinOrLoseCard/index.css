@@ -1,0 +1,33 @@
+/* Write your code here. */
+.css-winOrLose-Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.css-left-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.css-winlose-image {
+  width: 300px;
+}
+
+.css-playagainButton-itself {
+  background-color: #ffce27;
+  color: black;
+  border-width: 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.css-playagainButton-itself:hover {
+  cursor: pointer;
+}

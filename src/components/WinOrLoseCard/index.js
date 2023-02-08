@@ -13,7 +13,7 @@ const WinOrLoseCard = props => {
       <div className="css-left-Container">
         {displayedScore === 12 ? <h1>You Won</h1> : <h1>You Lose</h1>}
         {displayedScore === 12 ? <p>Best Score</p> : <p>Score</p>}
-        {displayedScore === 12 ? <p>{displayedScore}/12</p> : <p>12/12</p>}
+        {displayedScore !== 12 ? <p>{displayedScore}/12</p> : <p>12/12</p>}
         <button
           type="button"
           onClick={PlayAgainFunction}

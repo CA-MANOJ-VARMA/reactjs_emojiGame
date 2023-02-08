@@ -74,6 +74,7 @@ class EmojiGame extends Component {
         score: 0,
         TopScore: prevState.score > prevState.TopScore ? score : TopScore,
         displayedScore: score,
+        idsClicked: [],
         gamefinished: true,
       }))
     }

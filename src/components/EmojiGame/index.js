@@ -30,7 +30,7 @@ class EmojiGame extends Component {
 
   cardDisplayFunction = () => {
     const {emojisList} = this.props
-    console.log(emojisList)
+    // console.log(emojisList)
     emojisList.sort(() => Math.random() - 0.5)
     return (
       <ul className="css-displayEmoji-container">
@@ -54,7 +54,7 @@ class EmojiGame extends Component {
       displayedScore,
       idsClicked,
     } = this.state
-    console.log(clickedId, count, firstClickedId)
+    // console.log(clickedId, count, firstClickedId)
     // if (count === 0) {
     //   idsClicked.push(clickedId)
     //   this.setState(prevState => ({
@@ -78,11 +78,12 @@ class EmojiGame extends Component {
         gamefinished: true,
       }))
     }
-
-    if (idsClicked.length === 12) {
+    console.log(score)
+    if (score + 1 === 12) {
+      console.log('11th time')
       this.setState(prevState => ({
-        TopScore: score >= prevState.TopScore ? score : TopScore,
-        displayedScore: score,
+        TopScore: score >= prevState.TopScore ? score + 1 : TopScore,
+        displayedScore: score + 1,
         gamefinished: true,
       }))
     }
@@ -91,7 +92,7 @@ class EmojiGame extends Component {
   }
 
   playAgainFunction = () => {
-    this.setState({gamefinished: false, idsClicked: []})
+    this.setState({gamefinished: false, idsClicked: [], score: 0})
   }
 
   render() {
@@ -102,7 +103,7 @@ class EmojiGame extends Component {
       displayedScore,
       idsClicked,
     } = this.state
-    console.log(TopScore)
+    // console.log(TopScore)
     return (
       <div className="css-bg-container">
         <NavBar

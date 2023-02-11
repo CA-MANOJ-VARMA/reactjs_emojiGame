@@ -2,9 +2,9 @@
 import './index.css'
 
 const WinOrLoseCard = props => {
-  const {displayedScore, playAgainFunction} = props
+  const {idsClicked, playAgainFunction, displayedScore} = props
   console.log('asfdgh')
-  console.log(displayedScore)
+  console.log(idsClicked.length)
   const PlayAgainFunction = () => {
     playAgainFunction()
   }
